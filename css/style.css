@@ -219,6 +219,12 @@ h1, h2, h3, h4, h5 {
     transform: scaleY(1);
 }
 
+@media (min-width: 0px) {
+    #activity {
+        display: none;
+    }   
+}
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 425px) {
     #overlay-activity {

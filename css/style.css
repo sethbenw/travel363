@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5 {
 .ciao {
     font-family: 'Amatic SC', cursive;
     font-family: 'Euphoria Script', cursive;
+    transition: text-shadow .5s;
+}
+
+.ciao:hover {
     text-shadow: 2px 2px #000000;
 }
 
@@ -223,6 +227,9 @@ h1, h2, h3, h4, h5 {
     #activity {
         display: none;
     }   
+    .ciao {
+        text-shadow: 2px 2px #000000;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -250,6 +257,12 @@ h1, h2, h3, h4, h5 {
 @media (min-width: 768px) {
     .top-article-text > h2 {
         font-size: 5rem;
+    }
+    .gondola-one {
+        width: 350px;
+        height: 150px;
+        animation: gondola-footer 6s linear 0s infinite;
+        position: relative;
     }
 
  }
@@ -287,6 +300,9 @@ h1, h2, h3, h4, h5 {
 
     .site-inner:hover > .site-text {
         bottom: 20px;
+    }
+    .ciao {
+        text-shadow:none;
     }
 }
 
@@ -336,4 +352,36 @@ h1, h2, h3, h4, h5 {
 .footer-text a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+@keyframes gondola-footer {
+    0% {
+        left: -300px;
+    }
+    100% {
+        left: 100%;
+    }
+
+}
+
+@keyframes gondola-reverse {
+    0% {
+        left: 100%;
+    }
+    100% {
+        transform: translate(500%);
+    }
+
+
+}
+
+.gondola{
+    overflow: hidden;
+}
+.gondola-two {
+    width: 350px;
+    height: 150px;
+    animation: gondola-reverse 8s linear 0s infinite alternate;
+    position: relative;
+    animation-direction: reverse;
 }

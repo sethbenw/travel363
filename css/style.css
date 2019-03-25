@@ -230,6 +230,9 @@ h1, h2, h3, h4, h5 {
     .ciao {
         text-shadow: 2px 2px #000000;
     }
+    #gondola-ride {
+        display: none;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -264,7 +267,9 @@ h1, h2, h3, h4, h5 {
         animation: gondola-footer 6s linear 0s infinite;
         position: relative;
     }
-
+    #gondola-ride {
+        display: block;
+    }
  }
 
 /* Large devices (desktops, 992px and up)*/
@@ -322,7 +327,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .links-text {
-    color: white;
+    color: #fff;
 }
 
 .links-text:hover {
@@ -349,8 +354,10 @@ h1, h2, h3, h4, h5 {
     font-size: 15px;
 }
 
+.footer-text a {
+    color:#fff;
+}
 .footer-text a:hover {
-    color: #fff;
     text-decoration: underline;
 }
 
